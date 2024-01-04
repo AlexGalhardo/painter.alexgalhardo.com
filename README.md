@@ -9,10 +9,10 @@
 ## Tools Used
 
 *   [Linux Mint XFCE 21.04](https://linuxmint.com/)
-*   [Git for control version](https://git-scm.com/)
-*   [Vite v4](https://vitejs.dev/)
+*   [Git](https://git-scm.com/)
+*   [Vite v5](https://vitejs.dev/)
 *   [Boostrap v5](https://getbootstrap.com/)
-*   [ReacJS](https://react.dev/)  + TypeScript
+*   [ReacJS + Typescript](https://react.dev/)
 *   [NodeJS v20](https://nodejs.org/en)
 *   Code Editor: [VSCode](https://code.visualstudio.com/)
 *   Deploy: <https://vercel.com/>
@@ -74,16 +74,6 @@
     npm run start
 
 *   Go to: <http://localhost:4173/>
-
-## Before Submit Commits & PRs
-
-*   Run command:
-
-<!---->
-
-    npm run format
-
-<!---->
 
 ## License
 
