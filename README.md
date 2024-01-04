@@ -4,76 +4,92 @@
 
 ## Introduction
 
-*   A personal and challenge project I created to learn and improve my ReactJS skills in a Single Page Application states management.
+* A personal and challenge project I created to learn and improve my ReactJS skills in a Single Page Application states management.
 
 ## Tools Used
 
-*   [Linux Mint XFCE 21.04](https://linuxmint.com/)
-*   [Git](https://git-scm.com/)
-*   [Vite v5](https://vitejs.dev/)
-*   [Boostrap v5](https://getbootstrap.com/)
-*   [ReacJS + Typescript](https://react.dev/)
-*   [NodeJS v20](https://nodejs.org/en)
-*   Code Editor: [VSCode](https://code.visualstudio.com/)
-*   Deploy: <https://vercel.com/>
-*   Frontend Global State Management:
-    *   [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+* [Linux Mint XFCE 21.04](https://linuxmint.com/)
+* [Git](https://git-scm.com/)
+* [Vite v5](https://vitejs.dev/)
+* [Boostrap v5](https://getbootstrap.com/)
+* [ReacJS + Typescript](https://react.dev/)
+* [NodeJS v20](https://nodejs.org/en)
+* Code Editor: [VSCode](https://code.visualstudio.com/)
+* Deploy: <https://vercel.com/>
+* Frontend Global State Management:
+  * [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
 
 ## Development Setup Local
 
-*   Clone this repository
+* Clone this repository
 
 <!---->
 
-    git clone https://github.com/AlexGalhardo/painter.alexgalhardo.com
+```
+git clone https://github.com/AlexGalhardo/painter.alexgalhardo.com
+```
 
-*   Enter repository
-
-<!---->
-
-    cd painter.alexgalhardo.com/
-
-*   Install dependencies
+* Enter repository
 
 <!---->
 
-    npm install
+```
+cd painter.alexgalhardo.com/
+```
 
-*   Setup enviroment variables
-
-<!---->
-
-    cp .env.development .env
-
-*   Start local server
+* Install dependencies
 
 <!---->
 
-    npm run dev
+```
+npm install
+```
 
-*   Go to: <http://localhost:5173/>
+* Setup enviroment variables
+
+<!---->
+
+```
+cp .env.development .env
+```
+
+* Start local server
+
+<!---->
+
+```
+npm run dev
+```
+
+* Go to: <http://localhost:5173/>
 
 ## Build for deploy
 
-*   Create build
+* Create build
 
 <!---->
 
-    npm run build
+```
+npm run build
+```
 
-*   Preview production build
-
-<!---->
-
-    npm run preview
-
-*   Open production build local server (build + preview)
+* Preview production build
 
 <!---->
 
-    npm run start
+```
+npm run preview
+```
 
-*   Go to: <http://localhost:4173/>
+* Open production build local server (build + preview)
+
+<!---->
+
+```
+npm run start
+```
+
+* Go to: <http://localhost:4173/>
 
 ## License
 
