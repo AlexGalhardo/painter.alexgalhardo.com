@@ -116,29 +116,32 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     };
 
     const reducer = (globalState: GlobalState, action: DispatchAction): GlobalState => {
+        const { payload } = action;
+
         switch (action.type) {
             case DispatchActionType.UPDATE_FREE_AREA_TO_PAINT:
-                if (action.payload.wallIndex)
-                    globalState.ROOM.wallsFreeAreasToPaint[action.payload.wallIndex - 1] =
-                        action.payload.totalFreeWallAreaToPaint ?? 0;
-
+                if (payload.wallIndex) {
+                    globalState.ROOM.wallsFreeAreasToPaint[payload.wallIndex - 1] =
+                        payload.totalFreeWallAreaToPaint ?? 0;
+                }
                 return { ...globalState, ...action };
 
             case DispatchActionType.HAS_WALL_BUSINESS_RULES_ERROR:
-                globalState.ROOM.hasWallBusinessRulesErrors[action.payload.wallIndex - 1] =
-                    action.payload.hasWallBusinessRulesErrors ?? false;
+                globalState.ROOM.hasWallBusinessRulesErrors[payload.wallIndex - 1] =
+                    payload.hasWallBusinessRulesErrors ?? false;
 
-                if (globalState.ROOM.hasWallBusinessRulesErrors) {
-                    globalState.TO_BUY.bigPaintCan = 0;
-                    globalState.TO_BUY.mediumPaintCan = 0;
-                    globalState.TO_BUY.normalPaintCan = 0;
-                    globalState.TO_BUY.smallPaintCan = 0;
+                if (globalState.ROOM.hasWallBusinessRulesErrors.some(Boolean)) {
+                    globalState.TO_BUY = {
+                        bigPaintCan: 0,
+                        mediumPaintCan: 0,
+                        normalPaintCan: 0,
+                        smallPaintCan: 0,
+                    };
                 }
-
                 return { ...globalState, ...action };
 
             default:
-                return { ...globalState, ...action };
+                return globalState;
         }
     };
 

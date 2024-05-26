@@ -6,90 +6,40 @@
 
 * A personal and challenge project I created to learn and improve my ReactJS skills in a Single Page Application states management.
 
-## Tools Used
-
-* [Linux Mint XFCE 21.04](https://linuxmint.com/)
-* [Git](https://git-scm.com/)
-* [Vite v5](https://vitejs.dev/)
-* [Boostrap v5](https://getbootstrap.com/)
-* [ReacJS + Typescript](https://react.dev/)
-* [NodeJS v20](https://nodejs.org/en)
-* Code Editor: [VSCode](https://code.visualstudio.com/)
-* Deploy: <https://vercel.com/>
-* Frontend Global State Management:
-  * [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
 
 ## Development Setup Local
 
-* Clone this repository
-
-<!---->
-
+1. Clone this repository
 ```
 git clone https://github.com/AlexGalhardo/painter.alexgalhardo.com
 ```
 
-* Enter repository
-
-<!---->
-
+2. Enter repository
 ```
 cd painter.alexgalhardo.com/
 ```
 
-* Install dependencies
-
-<!---->
-
+3. Run setup.sh
 ```
-npm install
+chmod +x setup.sh && ./setup.sh
 ```
-
-* Setup enviroment variables
-
-<!---->
-
-```
-cp .env.development .env
-```
-
-* Start local server
-
-<!---->
-
-```
-npm run dev
-```
-
-* Go to: <http://localhost:5173/>
 
 ## Build for deploy
 
-* Create build
-
-<!---->
-
+a. Create build
 ```
-npm run build
+bun run build
 ```
 
-* Preview production build
-
-<!---->
-
+b. Preview production build
 ```
-npm run preview
+bun run preview
 ```
 
 * Open production build local server (build + preview)
-
-<!---->
-
 ```
-npm run start
+bun run start
 ```
-
-* Go to: <http://localhost:4173/>
 
 ## License
 
